@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050509">
+<meta name="description" content="Josiah und Bruder Podcast">
+<link rel="manifest" href="manifest.json">
+<title>Josiah & Bruder Podcast</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050509;color:#fff;font-family:Arial,sans-serif}
+header{padding:20px;text-align:center;background:linear-gradient(135deg,#080817,#18051f);border-bottom:1px solid #ff2db2}
+h1{font-size:28px;margin:5px 0;color:#fff}h2{color:#20d9ff}
+.neon{color:#ff2db2;text-shadow:0 0 12px #ff2db2}.sub{color:#20f0d0}
+.hero{padding:18px}.hero img{width:100%;height:330px;object-fit:cover;border-radius:22px;box-shadow:0 0 25px #ff2db2}
+.card{margin:15px;padding:18px;border:1px solid #772cff;border-radius:20px;background:#0d0d18;box-shadow:0 0 15px #222}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}.grid img{width:100%;height:180px;object-fit:cover;border-radius:15px;border:1px solid #20d9ff}
+button,a.btn{display:block;text-align:center;text-decoration:none;width:100%;padding:14px;margin:8px 0;border:0;border-radius:30px;background:linear-gradient(90deg,#ff2db2,#7b2cff);color:#fff;font-weight:bold}
+nav{position:fixed;bottom:0;left:0;right:0;background:#080811;padding:10px;display:flex;justify-content:space-around;border-top:1px solid #333}
+nav button{background:none;margin:0;padding:8px;color:#fff;font-size:12px}.page{padding-bottom:80px}
+small{color:#bbb}
+</style>
+</head>
+<body>
+<header><div class="sub">🎙️ PODCAST</div><h1>JOSIAH UND <span class="neon">BRUDER</span></h1><small>Alltag & Unterhaltung</small></header>
+<main class="page">
+<section id="start" class="hero">
+<img src="bilder/foto1.jpg" alt="Josiah und Lukas">
+<div class="card"><h2>Willkommen! 👋</h2><p>Josiah und Lukas – zwei Brüder und ihr Podcast über Alltag, Unterhaltung und alles, was uns beschäftigt.</p><h2>🎧 75+ FOLGEN</h2></div>
+<a class="btn" href="https://open.spotify.com/" target="_blank">SPOTIFY →</a>
+<a class="btn" href="https://music.amazon.com/" target="_blank">AMAZON MUSIC →</a>
+<a class="btn" href="https://www.spreaker.com/" target="_blank">SPREAKER →</a>
+</section>
+
+<section id="folgen" class="card"><h2>🎧 Folgen</h2>
+<p><b>75+ Folgen</b> – hier kannst du später eure echten Folgentitel und direkten Hör-Links eintragen.</p>
+<p>Folge 75 – Neue Folge</p><p>Folge 74 – Unser Alltag</p><p>Folge 73 – Lustige Momente</p>
+</section>
+
+<section id="bilder" class="card"><h2>📸 Bilder</h2><p>Tippe auf ein Bild, um es groß anzusehen.</p></section>
+<div class="grid">
+<img src="bilder/foto1.jpg" onclick="openImg(this.src)" alt="Foto 1">
+<img src="bilder/foto2.jpg" onclick="openImg(this.src)" alt="Foto 2">
+<img src="bilder/foto3.jpg" onclick="openImg(this.src)" alt="Foto 3">
+<img src="bilder/foto4.jpg" onclick="openImg(this.src)" alt="Foto 4">
+</div>
+
+<section id="fakten" class="card"><h2>💡 Fakten</h2>
+<p>🎙️ <b>Podcast:</b> Josiah und Bruder Podcast</p>
+<p>👥 <b>Hosts:</b> Josiah & Lukas</p>
+<p>🎧 <b>Folgen:</b> 75+</p>
+<p>🎨 <b>Style:</b> bunt & modern / Neon-Cool</p>
+<p>📡 <b>Plattformen:</b> Spotify, Amazon Music und Spreaker</p>
+</section>
+
+<section id="kontakt" class="card"><h2>📩 Kontakt</h2>
+<p>Du möchtest uns schreiben?</p><a class="btn" href="mailto:josiahgassner@gmail.com">E-Mail senden</a>
+</section>
+</main>
+<nav>
+<button onclick="go('start')">🏠<br>Start</button>
+<button onclick="go('folgen')">🎧<br>Folgen</button>
+<button onclick="go('bilder')">📸<br>Bilder</button>
+<button onclick="go('fakten')">💡<br>Fakten</button>
+<button onclick="go('kontakt')">📩<br>Kontakt</button>
+</nav>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+function openImg(src){window.open(src,'_blank');}
+</script><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}</script>
+</body></html>

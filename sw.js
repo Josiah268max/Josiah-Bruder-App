@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>e.waitUntil(caches.open('jbp-v1').then(c=>c.addAll(['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png','./bilder/foto1.jpg','./bilder/foto2.jpg','./bilder/foto3.jpg','./bilder/foto4.jpg']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));

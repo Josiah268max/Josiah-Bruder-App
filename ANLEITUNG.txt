@@ -1,0 +1,24 @@
+JOSIAH & BRUDER PODCAST – APP FÜR DEN STARTBILDSCHIRM
+
+Diese Version ist eine installierbare Web-App (PWA). Sie öffnet sich auf dem Handy wie eine eigene App und verwendet eure ORIGINALFOTOS.
+
+WICHTIG:
+Für den Button „Zum Startbildschirm hinzufügen“ muss die Seite online über HTTPS laufen.
+Eine einfache Möglichkeit ist GitHub Pages.
+
+SO GEHT'S:
+1. Entpacke die ZIP.
+2. Lade alle Dateien/Ordner in ein neues GitHub-Repository hoch.
+3. Aktiviere unter Settings -> Pages die Veröffentlichung über GitHub Pages.
+4. Öffne die erzeugte Website-Adresse auf deinem Android-Handy in Chrome.
+5. Chrome-Menü (⋮) -> „App installieren“ oder „Zum Startbildschirm hinzufügen“.
+6. Danach erscheint die App mit einem eigenen Symbol auf dem Startbildschirm.
+
+BEARBEITEN:
+- Texte/Fakten/Folgentitel: index.html
+- Fotos: Ordner bilder
+- App-Name: manifest.json
+- Farben/Design: style-Bereich oben in index.html
+- Plattform-Links: index.html
+
+Die vier Originalfotos sind bereits enthalten.
